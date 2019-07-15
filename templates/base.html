@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AlienRP - player for DI.FM, ROCKRADIO.COM, RadioTunes, ClassicalRadio.com, JAZZRADIO.com</title>
+	<meta charset="utf-8">
+    <link href="static/style/style.css" rel="stylesheet" />
+	<meta name = "description" content = "Homepage of AlienRP application. AlienRP is a completely free, NONOFFICIAL desktop application for music playback on DI.FM, ROCKRADIO.COM, RadioTunes, ClassicalRadio.com, JAZZRADIO.com" />
+	<meta name = "keywords" content = "AlienRP,di.fm,player,standalone,Digitally Imported, DI.FM, ROCKRADIO.COM, RadioTunes, ClassicalRadio.com, JAZZRADIO.com" />
+	<meta name = "robots" content = "index,follow" />
+	<meta name="yandex-verification" content="b0a9b930f1464731" />
+	<link rel="shortcut icon" type="image/png" href="static/image/favicon.png"/>
+</head>
+<body>
+    <div id="container">
+        
+	<div id="header-border">
+            <div id="header">
+		<div id="left-header">
+			<a href="/"><img id="logo" src="static/image/logo.png" alt="AlienRP logo"></a>
+		</div>
+		<div id="central-header">
+			<div class="top-menu">
+				<a href="/"> {{ _('Home') }}</a>			
+				<a href="/contact">Contact</a>
+			</div>
+		</div>
+		<div id="right-header">
+                	<button id="download-link" onclick="location.href='/download'">Download</button>
+		</div>
+            </div>
+        </div>
+        
+	{% block body %}{% endblock %}
+
+	<div id="footer-border">        
+		<div id="footer">
+			<div id="left-footer">
+				<span id="footer-text">Copyright © 2017 Pavel Silukou</span>
+			</div>
+			<div id="right-footer">
+				<a class="footer-link" href="/policy"> {{ _('Privacy policy') }}</a>
+		        	<a class="footer-link" href="/license"> {{ _('License') }}</a>
+				<a class="footer-link" href="/source"> {{ _('Source code') }}</a>
+			</div>
+		</div>
+	</div>
+    </div>
+</body>
+</html>

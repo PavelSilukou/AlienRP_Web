@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block body %}
+<div id="body">
+            <div id="slides">
+                <div class="slide">
+                    <div class="silde-content-ltr">
+                        <div class="column-download-image">
+                            <img style="height: 256px; width: 256px;" src="static/image/download.png" alt="Download" />
+                        </div>
+                        <div class="column-download-text">
+                            <span class="header">Download</span>
+                            <span style="margin-top: 20px;" class="simple-text">Actual version - 2.0.1</span>
+                            <div style="margin-top: 20px;" id="download-windows">
+                                <span class="simple-text">
+                                    Windows 7 / 8 / 10
+                                </span>
+                                <div id="download-buttons">
+                                    <a href={{setup32}} class="button" target="_blank">32-bit</a>
+									<a style="margin-left: 20px;" href={{setup64}} class="button" target="_blank">64-bit</a>
+                                </div>
+                            </div>
+							<span style="margin-top: 20px;" class="simple-text"><a class="framework" target="_blank" href="https://www.microsoft.com/en-us/download/details.aspx?id=42642">Microsoft .NET Framework 4.5.2</a> installation may be required for Windows 7.</span>
+                            <span style="margin-top: 20px;" class="simple-text warning">AlienRP is available only for the Premium members of DI.FM, ROCKRADIO.COM, RadioTunes, ClassicalRadio.com or JAZZRADIO.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
